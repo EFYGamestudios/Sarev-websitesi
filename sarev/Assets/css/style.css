@@ -1,0 +1,365 @@
+@font-face {
+    font-family: 'PT Sans', sans-serif;
+    src: url(../../Uplads/font/PTSans-Regular.ttf);
+}
+@font-face {
+    font-family: 'Satisfy';
+    src: url(../../Uplads/font/Elyazması.TTF);
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none ;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+/*SCROLLBAR*/
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #6E3AAF; 
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #47266F; 
+  }
+
+
+
+.container{
+    width: 930px;
+    margin: 0 auto;
+}
+header{
+    background-color: #FFFFFF;
+}
+footer{
+    background-color: #000000;
+}
+.flt{
+    float: left;
+}
+.frt{
+    float: right;
+}
+.clear{
+    float: none !important;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+
+
+
+
+section{
+    background-image: url(../../Uplads/img/bacgrand.png);
+    padding: 40px 0;
+}
+.linkler-menu>a{
+    display: inline-block;
+    font-size: 10px;
+    margin: 20px;
+}
+.input-papa{
+    position: relative;
+    float: right;
+}
+.input-papa>input{
+    border-radius: 10px;
+    border: none;
+    border: #999191 1px solid;
+    width: 215px;
+    height: 35px;
+}
+.input-papa>a{
+    margin-top: 5px;
+    position: absolute;
+    right: 10px;
+}
+.menu li{
+    position: relative;
+    float: left;
+    width: 186px;
+    height: 50px;
+    text-align: center;
+}
+.menu li>a{
+    color: #47266F;
+    padding-top: 15px;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+.menu li>a:hover{
+    background-color: #47266F;
+    border-radius: 2px;
+    box-shadow: 15px 10px 10px 0px rgba(0, 0, 0, 0.25);
+    color: white;
+}
+.menu li:last-child,.foot-menu>ul>li:last-child{
+    float: none !important;
+    clear: both;
+    width: 0;
+    height: 0;
+    padding: 0;
+}
+.alt-cizgi{
+    width: 100%;
+    height: 10px;
+    background-color: #47296D;
+}
+.foot-menu{
+    display: inline-block;
+}
+.foot-menu>ul>li{
+float: left;
+width: 150px;
+font-size: 18px;
+}
+.foot-menu>ul>li>a{
+color: #6E3AAF;
+}
+.foot-menu>ul>li>ul>li>a{
+    font-size: 13px;
+    color: white;
+}
+.epsta-kutu{
+    padding: 15px;
+    margin-top:20px ;
+    float: right;
+    width: 290px;
+    height: 80px;
+    background-color: #222222;
+}
+#email{
+    float: left;
+    width: 200px;
+    height: 30px;
+}
+#button{
+    cursor: pointer;
+    color: white;
+    border: none;
+    height: 30px;
+    width: 50px;
+    background-color: #6F34B2;
+}
+.epsta-kutu{
+    color: white;
+    font-size: 13px;
+}
+.slad{
+    background-image: url(../../Uplads/img/banner.png);
+    width: 930px;
+    height: 530px;
+}
+.detay{
+    margin-top: 40px ;
+}
+
+.hakkımızda,.haberler,.resimler{
+    margin-bottom: 10px;
+    padding: 20px;
+    width: 290px;
+    height: 240px;
+    background-color: white;
+    border-radius: 10px;
+}
+.hakkımızda>p:first-child,.haberler>p:first-child{
+    margin: 5px 0 5px 10px;
+    color: #47296D;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.yatakodasi,.bayo,.bebek{
+    margin-left: 10px;
+    display: inline-block;
+    width: 200px;
+    height: 745px;
+
+}
+.yatakodasi-alt{
+    width: 200px;
+    height: 80px;
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 23px;
+    text-align: center;
+    color: #47266F;
+}
+.resim{
+    border-radius: 10px;
+    width: 200px;
+    height: 660px;
+    margin-bottom: 5px;
+}
+.resimler-ilk{
+    color: #47296D;
+    background-image: url(../../Uplads/img/kırmızı\ yatak.png);
+    width: 280px;
+    height: 110px;
+    margin-bottom: 7px;
+    display: inline-block;
+}
+.resimler-ilk>p{
+    width: 150px;
+    background-color: rgba(255, 255, 255, 0.618);
+    padding-left: 15px;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.resimler-ilk>p+p{
+    margin-top: 0;
+    margin-left: 40px;
+}
+.resimler-son{
+    color: #47296D;
+    display: inline-block;
+    background-image: url(../../Uplads/img/kitap.png);
+    width: 280px;
+    height: 110px;
+}
+.resimler-son>p{
+    width: 150px;
+    background-color: rgba(255, 255, 255, 0.618);
+    padding-left: 15px;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.resimler-son>p+p{
+    margin-top: 0;
+    margin-left: 40px;
+}
+.linkler{
+    float: left;
+}
+.kart{
+    float: right;
+}
+.foot-foot{
+    background-color: #121211;
+    height: 50px;
+}
+.foot-foot p{
+    font-size: 10px;
+    color: white;
+}
+.foot-foot>.container{
+    padding-top: 15px;
+}
+.banner-yazi1>p{
+    font-size: 50px;
+    font-family: 'Satisfy';
+    font-style: italic;
+    color: gray;
+    text-align: center;
+}
+.banner-yazi1{
+    background-color: rgba(255, 255, 255, 0.618);
+    margin-right: 45px;
+    margin-top: 65px;
+    margin-bottom: 70px;
+    float: right;
+    width: 450px;
+}
+.banner-yazi2>p{
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(255, 255, 255, 0.618);
+    font-size: 45px;
+    font-family: 'Satisfy';
+    font-style: italic;
+    color: gray;
+    display: inline-block;
+}
+.banner-yazi2>p+p{
+    font-size: 40px;
+    padding-left: 140px;
+    padding-right: 140px;
+}
+.banner-yazi2{
+    width: 800px;
+    margin-left: 80px;
+}
+.ok-tus{
+    margin-bottom: 100px;
+}
+.ok-tus>a{
+    display: inline-block;
+    margin: 0 15px;
+}
+.slad-radio{
+    width: 930px;
+    margin-top: 30px;
+    height: 17px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+.slad-radio>div{
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+.slad-radio>div>div{
+    margin: 0 auto;
+}
+.slad-radio>div:first-child{
+    background: none;
+}
+.slad-radio>div>div{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+}
+.slad-icerik>div:nth-child(1){
+    display: block;
+}
+.slad-icerik>div{
+    position: relative;
+}
+.haberler{
+    overflow: auto;
+}
+.haberler>div{
+    margin-bottom: 20px;
+}
+.tanıtım{
+    color: #47266F;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.resimler{
+    padding: 5px;
+}
+.acilir-menu{
+    position: absolute;
+    left: -373px;
+    z-index: 100;
+    width: 930px;
+    height: 300px;
+    background-color: #46296d8d;
+    display: none;
+}
+.menu li:hover .acilir-menu{
+    display: block;
+}
